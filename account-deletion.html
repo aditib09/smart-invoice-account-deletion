@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request - Smart Invoice Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .steps {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .step-content p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .data-types {
+            background: #fff5f5;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .data-types h3 {
+            color: #dc3545;
+            margin-bottom: 15px;
+        }
+        
+        .data-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .data-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ffe6e6;
+        }
+        
+        .data-list li:before {
+            content: "🗑️";
+            margin-right: 10px;
+        }
+        
+        .contact-section {
+            background: #f0f8ff;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .contact-button {
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .contact-button:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .warning p {
+            color: #856404;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .step-number {
+                margin: 0 auto 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Smart Invoice Manager</h1>
+            <p>Account Deletion Request</p>
+            <p style="font-size: 0.9em; opacity: 0.8; margin-top: 10px;">
+                App Package: com.aditi.billingapp | Developer: Shesha Vanand
+            </p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2>Request Account Deletion</h2>
+                <p>We understand that you may want to delete your Smart Invoice Manager (com.aditi.billingapp) account and associated data. This page provides clear instructions on how to request account deletion and explains what data will be removed.</p>
+                <p><strong>App Information:</strong></p>
+                <ul style="margin: 10px 0; padding-left: 20px;">
+                    <li>App Name: Smart Invoice Manager</li>
+                    <li>Package Name: com.aditi.billingapp</li>
+                    <li>Developer: Shesha Vanand</li>
+                    <li>Available on: Google Play Store</li>
+                </ul>
+            </div>
+            
+            <div class="warning">
+                <h3>⚠️ Important Notice</h3>
+                <p><strong>Account deletion is permanent and cannot be undone.</strong> Once your account is deleted, you will lose access to all your invoices, shop information, and other data stored in the app.</p>
+            </div>
+            
+            <div class="section">
+                <h2>How to Delete Your Account</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>In-App Deletion (Recommended)</h3>
+                            <p>Open Smart Invoice Manager → Go to Profile → Scroll down and tap "Delete Account" → Follow the confirmation prompts</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Email Request</h3>
+                            <p>If you cannot access the app, send an email to our support team using the contact button below. Include your registered email address and reason for deletion.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Verification Process</h3>
+                            <p>For security purposes, we may ask you to verify your identity before processing the deletion request. This helps protect your account from unauthorized deletion requests.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Deletion Completion</h3>
+                            <p>Account deletion will be processed within 7 business days. You will receive a confirmation email once the deletion is complete.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Data That Will Be Deleted</h2>
+                <div class="data-types">
+                    <h3>The following data will be permanently removed:</h3>
+                    <ul class="data-list">
+                        <li><strong>Account Information:</strong> Email address, authentication data</li>
+                        <li><strong>Shop Details:</strong> Shop name, address, and business information</li>
+                        <li><strong>Invoice Data:</strong> All created invoices, customer details, and transaction history</li>
+                        <li><strong>Product Information:</strong> Saved products and pricing data</li>
+                        <li><strong>App Preferences:</strong> Settings and customizations</li>
+                        <li><strong>Usage Analytics:</strong> App usage patterns and statistics</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Data Retention Policy</h2>
+                <p><strong>Immediate Deletion:</strong> Most personal data is deleted immediately upon account deletion.</p>
+                <p><strong>Backup Systems:</strong> Data in backup systems may take up to 30 days to be completely removed.</p>
+                <p><strong>Legal Requirements:</strong> Some data may be retained for legal compliance purposes for up to 7 years, but this data will be anonymized and not linked to your personal identity.</p>
+                <p><strong>Analytics Data:</strong> Aggregated, anonymized usage statistics may be retained for app improvement purposes.</p>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Need Help?</h2>
+                <p>If you have questions about account deletion or need assistance, please contact our support team:</p>
+                <a href="mailto:sheshavanand@gmail.com?subject=Smart Invoice Manager - Account Deletion Request&body=Please include your registered email address and reason for deletion." class="contact-button">
+                    📧 Email Support
+                </a>
+                <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                    Response time: Within 24-48 hours
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2024 Smart Invoice Manager (com.aditi.billingapp) by Shesha Vanand. All rights reserved.</p>
+            <p>This page complies with Google Play Store account deletion requirements.</p>
+            <p style="font-size: 0.8em; margin-top: 10px;">
+                This account deletion page is specifically for the Smart Invoice Manager app (package: com.aditi.billingapp) 
+                published by Shesha Vanand on Google Play Store.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
